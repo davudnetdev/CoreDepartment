@@ -1,0 +1,15 @@
+﻿@model CoreDepartment.Models.Department
+@{
+    ViewData["Title"] = "NewDepartment";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<br />
+<form class="form-group" method="post">
+    <b>Departmane Name</b>
+    <br />
+    @Html.TextBoxFor(x => x.DepartmentName, new { @class = "form-control" })
+    <br />
+<button class="btn btn-warning">Department Add</button>
+</form>
+
+
